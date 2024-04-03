@@ -49,7 +49,7 @@ public class ParserUtil {
      * @throws ParseException If any of the specified index is invalid, or there are duplicate input indices.
      */
     public static List<Index> parseIndices(String args, String sep) throws ParseException {
-        final String[] splitArgs = args.split(sep);
+        final String[] splitArgs = args.trim().split(sep);
         final ArrayList<Index> indices = new ArrayList<>();
 
         for (int i = 0; i < splitArgs.length; i++) {
