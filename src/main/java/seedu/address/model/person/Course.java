@@ -16,11 +16,11 @@ public class Course {
             + "Examples of accepted code: CS2103, CS2103T, DSA1101.";
 
     /*
-     * A course code should start with 2-3 alphabets, followed by exactly 4 digits.
+     * A course code should start with 2-4 alphabets, followed by exactly 4 digits.
      * Some course codes may also have an alphabet as its last character. (i.e. CS2103T)
      * (Course code format is quoted from official NUS website)
      */
-    private static final String PREFIX_CODE = "[A-Z]{2,3}";
+    private static final String PREFIX_CODE = "[A-Z]{2,4}";
     private static final String DIGIT_CODE = "[0-9]{4}";
     private static final String POSTFIX_CODE = "[A-Z]{0,1}";
     public static final String VALIDATION_REGEX = PREFIX_CODE + DIGIT_CODE + POSTFIX_CODE;
